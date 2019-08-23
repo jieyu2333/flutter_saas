@@ -3,5 +3,5 @@
 A new Flutter application.
 
 ## 页面展示
-[splash页面](https://flutter.dev/docs)
+[splash页面](https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/splash.png)
 
