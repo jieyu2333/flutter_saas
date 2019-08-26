@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter_saas/view/login_page.dart';
+
 class SplashPage extends StatefulWidget {
   @override
   _SplashPageState createState() => _SplashPageState();
@@ -17,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
           if (_countdownTime < 1) {
             _timer.cancel();
             print('结束时间：$_countdownTime');
-            goHome();
+            goLogin();
           } else {
             _countdownTime = _countdownTime - 1;
           }
@@ -26,13 +28,21 @@ class _SplashPageState extends State<SplashPage> {
     _timer = Timer.periodic(oneSec, callback);
   }
 
-  void goHome() {
-    print('跳转主页面');
+  ///跳转登陆页面
+  void goLogin() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => LoginPage()),
+    );
   }
 
   @override
   void dispose() {
     super.dispose();
+    cancelTimer();
+  }
+
+  void cancelTimer(){
     if (_timer != null) {
       _timer.cancel();
     }
@@ -76,7 +86,8 @@ class _SplashPageState extends State<SplashPage> {
                   splashColor: Colors.black12,
                   elevation: 0.0,
                   onPressed: () {
-                    goHome();
+                    cancelTimer();
+                    goLogin();
                   },
                   child: Text(
                     '$_countdownTime秒',
