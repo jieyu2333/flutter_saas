@@ -28,11 +28,16 @@ class _SplashPageState extends State<SplashPage> {
     _timer = Timer.periodic(oneSec, callback);
   }
 
-  ///跳转登陆页面
+  ///跳转登陆页面 并关闭当前页
+  ///Navigator.push(
+  ///      context,
+  ///     MaterialPageRoute(builder: (context) => LoginPage()),
+  ///    );
   void goLogin() {
-    Navigator.push(
+    Navigator.pushAndRemoveUntil(
       context,
-      MaterialPageRoute(builder: (context) => LoginPage()),
+      new MaterialPageRoute(builder: (context) => new LoginPage()),
+      (route) => route == null,
     );
   }
 
@@ -42,7 +47,7 @@ class _SplashPageState extends State<SplashPage> {
     cancelTimer();
   }
 
-  void cancelTimer(){
+  void cancelTimer() {
     if (_timer != null) {
       _timer.cancel();
     }
