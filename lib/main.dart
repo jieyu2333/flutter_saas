@@ -1,7 +1,47 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_saas/view/splash_page.dart';
+import 'package:flutter/material.dart';
+import 'news.dart';
 
-void main() => runApp(MyApp());
+class TabbedAppBarMain extends StatelessWidget {
+  var titleList = ['NEWS','LABS'];
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
+      home: new DefaultTabController(
+        length: titleList.length,
+        child: new Scaffold(
+          appBar: new AppBar(
+            elevation: 0.0,//导航栏下面那根线
+            title: new TabBar(
+              isScrollable: false,//是否可滑动
+              unselectedLabelColor: Colors.black26,//未选中按钮颜色
+              labelColor: Colors.black,//选中按钮颜色
+              labelStyle: TextStyle(fontSize: 18.0),//文字样式
+              indicatorSize: TabBarIndicatorSize.label,//滑动的宽度是根据内容来适应,还是与整块那么大(label表示根据内容来适应)
+              indicatorWeight: 4.0,//滑块高度
+              indicatorColor: Colors.yellow,//滑动颜色
+              indicatorPadding: EdgeInsets.only(bottom: 1.0),//与底部距离为1
+              tabs: titleList.map((String text) {//tabs表示具体的内容,是一个数组
+                return new Tab(
+                  text: text,
+                );
+              }).toList(),
+            ),
+          ),
+          //body表示具体展示的内容
+          body:TabBarView(children: [News(url: 'http://app3.qdaily.com/app3/homes/index_v2/'),News(url: 'http://app3.qdaily.com/app3/papers/index/')]) ,
+        ),
+      ),
+    );
+  }
+}
+
+//void main() => runApp(MyApp());
+void main() => runApp(new TabbedAppBarMain());
 
 class MyApp extends StatefulWidget {
   @override
@@ -12,67 +52,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
       title: 'Navigation Basics',
       home: SplashPage(),
     );
   }
 }
-
-//class MyApp extends StatelessWidget {
-//  @override
-//  Widget build(BuildContext context) {
-//    return MaterialApp(
-//      title: 'Flutter Demo',
-//      theme: ThemeData(
-//        primarySwatch: Colors.blue,
-//      ),
-//      home: MyHomePage(title: 'Flutter Demo Home Page'),
-//    );
-//  }
-//}
-//
-//class MyHomePage extends StatefulWidget {
-//  MyHomePage({Key key, this.title}) : super(key: key);
-//  final String title;
-//
-//  @override
-//  _MyHomePageState createState() => _MyHomePageState();
-//}
-//
-//class _MyHomePageState extends State<MyHomePage> {
-//  int _counter = 0;
-//
-//  void _incrementCounter() {
-//    setState(() {
-//      _counter++;
-//    });
-//  }
-//
-//  @override
-//  Widget build(BuildContext context) {
-//    return Scaffold(
-//      appBar: AppBar(
-//        title: Text(widget.title),
-//      ),
-//      body: Center(
-//        child: Column(
-//          mainAxisAlignment: MainAxisAlignment.center,
-//          children: <Widget>[
-//            Text(
-//              'You have pushed the button this many times:',
-//            ),
-//            Text(
-//              '$_counter',
-//              style: Theme.of(context).textTheme.display1,
-//            ),
-//          ],
-//        ),
-//      ),
-//      floatingActionButton: FloatingActionButton(
-//        onPressed: _incrementCounter,
-//        tooltip: 'Increment',
-//        child: Icon(Icons.add),
-//      ),
-//    );
-//  }
-//}
