@@ -6,6 +6,16 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  bool _throwShotAway;
+
+  @override
+  void initState() {
+    super.initState();
+    setState(() {
+      _throwShotAway = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -75,6 +85,52 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.grey,
                   ),
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+                        Padding(
+                          padding:
+                              const EdgeInsets.fromLTRB(14.0, 0.0, 0.0, 0.0),
+                          child: Checkbox(
+                            value: _throwShotAway,
+                            onChanged: (newValue) {
+                              setState(
+                                () {
+                                  _throwShotAway = newValue;
+                                },
+                              );
+                            },
+                          ),
+                        ),
+                        Text(
+                          '记住密码',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Color(0xFF999999),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0.0, 0.0, 28.0, 0.0),
+                      child: GestureDetector(
+                        onTap: () {
+                          print("忘记密码点击事件");
+                          setState(() {});
+                        },
+                        child: Text(
+                          '忘记密码',
+                          style: TextStyle(
+                            fontSize: 14,
+                            color: Color(0xFF999999),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
                 Padding(
                   padding: const EdgeInsets.all(28.0),
                   child: SizedBox(
@@ -83,7 +139,9 @@ class _LoginPageState extends State<LoginPage> {
                     child: RaisedButton(
                       textColor: Colors.white,
                       color: Color(0xFF0084FF),
-                      onPressed: () {},
+                      onPressed: () {
+                        print('登陆');
+                      },
                       child: Text(
                         '登录',
                         style: TextStyle(
