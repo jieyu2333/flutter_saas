@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'forget_password_page.dart';
+import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -24,6 +25,17 @@ class _LoginPageState extends State<LoginPage> {
       MaterialPageRoute(
         builder: (context) => ForgetPasswordPage(),
       ),
+    );
+  }
+
+  ///主页
+  void goHome() {
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+        builder: (context) => HomePage(),
+      ),
+      (route) => route == null,
     );
   }
 
@@ -150,7 +162,7 @@ class _LoginPageState extends State<LoginPage> {
                       textColor: Colors.white,
                       color: Color(0xFF0084FF),
                       onPressed: () {
-                        print('登陆');
+                        goHome();
                       },
                       child: Text(
                         '登录',

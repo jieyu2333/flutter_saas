@@ -37,8 +37,6 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 color: Color(0XFFEEEEEE),
               ),
             ),
-
-
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 0.0),
               child: Stack(
@@ -82,8 +80,6 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 color: Color(0XFFEEEEEE),
               ),
             ),
-
-
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 0.0),
               child: TextField(
@@ -125,7 +121,6 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                 ),
               ),
             ),
-
           ],
         ),
       ),
