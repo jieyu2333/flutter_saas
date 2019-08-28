@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'forget_password_page.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -14,6 +16,15 @@ class _LoginPageState extends State<LoginPage> {
     setState(() {
       _throwShotAway = false;
     });
+  }
+
+  void goForgetPassword() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ForgetPasswordPage(),
+      ),
+    );
   }
 
   @override
@@ -117,8 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                       padding: const EdgeInsets.fromLTRB(0.0, 0.0, 28.0, 0.0),
                       child: GestureDetector(
                         onTap: () {
-                          print("忘记密码点击事件");
-                          setState(() {});
+                          goForgetPassword();
                         },
                         child: Text(
                           '忘记密码',

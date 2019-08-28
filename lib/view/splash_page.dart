@@ -57,7 +57,7 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     setState(() {
-      _countdownTime = 3;
+      _countdownTime = 1;
     });
     startCountdownTimer();
   }
