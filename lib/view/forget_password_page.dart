@@ -83,6 +83,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 0.0, 16.0, 0.0),
               child: TextField(
+                obscureText: true,
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   hintText: '新密码',
@@ -111,6 +112,7 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                   color: Color(0xFF0084FF),
                   onPressed: () {
                     print('修改密码');
+
                   },
                   child: Text(
                     '提交',

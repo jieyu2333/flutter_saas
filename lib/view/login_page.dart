@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: TextField(
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      hintText: '请输入用户名/密码',
+                      hintText: '请输入用户名',
                       hintStyle: TextStyle(
                         color: Color(0XFFC7C7CD),
                         fontSize: 16.0,
@@ -90,6 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(28.0, 0.0, 28.0, 0.0),
                   child: TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: '输入密码',
