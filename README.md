@@ -24,3 +24,23 @@ flutter build appbundle
 <img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/forget_password_page.png" width = "50%" height = "50%" alt="忘记密码页面" align=center />
 
 
+
+<table id='flutter-sass'>
+	<tr>
+		<td id='splash_page'>
+			<a href='https://github.com/ChinaVolvocars/flutter_saas/blob/master/lib/view/splash_page.dart'>
+				<img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/splash.png?size=140'>
+			</a>
+		</td>
+		<td id='login_page'>
+			<a href='https://github.com/ChinaVolvocars/flutter_saas/blob/master/lib/view/login_page.dart'>
+				<img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/login_page.png?size=140">
+			</a>
+		</td>
+		<td id='forget_password_page'>
+			<a href='https://github.com/ChinaVolvocars/flutter_saas/blob/master/lib/view/forget_password_page.dart'>
+				<img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/forget_password_page.png?size=140">
+			</a>
+		</td>
+	</tr>
+</table>
