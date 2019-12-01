@@ -15,7 +15,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      title: 'Navigation Basics',
+      title: 'SaaS App',
       home: SplashPage(),
     );
   }

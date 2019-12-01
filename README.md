@@ -16,6 +16,17 @@ flutter build appbundle
 //持续集成 --->>> https://fastlane.tools/
 
 
+## Apk
+
+下载地址
+```cmd
+https://fir.im/tlnz
+```
+
+二维码
+<img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/apk.png?size=140'>
+
+
 ## 页面展示
 
 <table id='flutter-sass'>
