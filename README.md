@@ -19,11 +19,12 @@ flutter build appbundle
 ## Apk
 
 下载地址
-```cmd
+```
 https://fir.im/tlnz
 ```
 
 二维码
+
 <img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/github/apk.png?size=140'>
 
 
