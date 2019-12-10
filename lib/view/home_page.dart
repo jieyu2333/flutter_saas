@@ -23,6 +23,10 @@ class _HomePageState extends State<HomePage> {
       'Index 2: School',
       style: optionStyle,
     ),
+    Text(
+      'Index 2: School',
+      style: optionStyle,
+    ),
   ];
 
   _HomePageState({Key key, @required this.items});
@@ -43,7 +47,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
+        title: const Text('猫屎星球'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -68,7 +72,8 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Colors.blue[800],
+        unselectedItemColor:Colors.black26,
         onTap: _onItemTapped,
       ),
     );
