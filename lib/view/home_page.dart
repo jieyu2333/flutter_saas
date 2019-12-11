@@ -73,9 +73,17 @@ class _HomePageState extends State<HomePage> {
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blue[800],
-        unselectedItemColor:Colors.black26,
+        unselectedItemColor: Colors.black26,
+        selectedIconTheme: IconThemeData(
+          color: Colors.blue[800],
+        ),
+        unselectedIconTheme: IconThemeData(
+          color: Colors.black26,
+        ),
+        type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
       ),
+
     );
   }
 }
