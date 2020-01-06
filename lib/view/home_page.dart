@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'news.dart';
+
 class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
@@ -10,11 +12,8 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: 首页',
-      style: optionStyle,
-    ),
+  List<Widget> _widgetOptions = <Widget>[
+    News(url: 'http://app3.qdaily.com/app3/homes/index_v2/'),
     Text(
       'Index 1: 值得买',
       style: optionStyle,
@@ -38,9 +37,15 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
+//    setState(() {
+//      _selectedIndex = index;
+//    });
+
+    if (index != _selectedIndex) {
+      setState(() {
+        _selectedIndex = index;
+      });
+    }
   }
 
   @override
@@ -49,8 +54,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('猫屎星球'),
       ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+//      body: Center(
+//        child: _widgetOptions.elementAt(_selectedIndex),
+//      ),
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: _widgetOptions,
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -83,7 +92,6 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
       ),
-
     );
   }
 }
