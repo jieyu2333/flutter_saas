@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_saas/view/index/index_page.dart';
+import 'package:flutter_saas/view/mine/mine_page.dart';
+import 'package:flutter_saas/view/shop/shop_page.dart';
+
+import 'buy/buy_page.dart';
 
 class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
@@ -10,31 +15,39 @@ class _HomePageState extends State<HomePage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: 首页',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: 值得买',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: 购物车',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: 个人',
-      style: optionStyle,
-    ),
-  ];
+
+//  static const List<Widget> _widgetOptions = <Widget>[
+//    Text(
+//      'Index 0: 首页',
+//      style: optionStyle,
+//    ),
+//    Text(
+//      'Index 1: 值得买',
+//      style: optionStyle,
+//    ),
+//    Text(
+//      'Index 2: 购物车',
+//      style: optionStyle,
+//    ),
+//    Text(
+//      'Index 3: 个人',
+//      style: optionStyle,
+//    ),
+//  ];
+  List<Widget> _widgetOptions = List<Widget>();
 
   _HomePageState({Key key, @required this.items});
 
   @override
   void initState() {
     super.initState();
-    setState(() {});
+//    setState(() {});
+
+    _widgetOptions
+      ..add(IndexPage())
+      ..add(BuyPage())
+      ..add(ShopPage())
+      ..add(MinePage());
   }
 
   void _onItemTapped(int index) {
@@ -83,7 +96,6 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
       ),
-
     );
   }
 }
