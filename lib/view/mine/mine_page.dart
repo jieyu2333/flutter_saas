@@ -17,7 +17,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -40,7 +40,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -63,7 +63,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -86,7 +86,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -109,7 +109,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -132,7 +132,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -155,7 +155,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -178,7 +178,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -201,7 +201,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -224,7 +224,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -247,7 +247,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -270,7 +270,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -293,7 +293,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -316,7 +316,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB(16, 12, 16, 12),
+              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
