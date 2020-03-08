@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_saas/model/Todo.dart';
+import 'package:flutter_saas/view/FirstScreen.dart';
+import 'package:flutter_saas/view/mine/my_cool_coin_page.dart';
+import 'package:flutter_saas/view/mine/my_profile_page.dart';
+
+import 'experience_page.dart';
+import 'my_brand_page.dart';
+import 'my_design_page.dart';
 
 class MinePage extends StatefulWidget {
   @override
@@ -11,13 +19,10 @@ class _MinePageState extends State<MinePage> {
     return Container(
       child: ListView(
         children: <Widget>[
-
-
-
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -31,6 +36,8 @@ class _MinePageState extends State<MinePage> {
             ),
             onTap: () {
               print('按下');
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => MyProfile()));
             },
           ),
           Divider(
@@ -40,7 +47,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -54,6 +61,7 @@ class _MinePageState extends State<MinePage> {
             ),
             onTap: () {
               print('按下');
+              _navigateAndDisplaySelection(context);
             },
           ),
           Divider(
@@ -63,7 +71,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -77,6 +85,11 @@ class _MinePageState extends State<MinePage> {
             ),
             onTap: () {
               print('按下');
+              final Todo todo = Todo('我的页面', '设计');
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MyDesign(todo: todo)));
             },
           ),
           Divider(
@@ -86,7 +99,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -100,6 +113,16 @@ class _MinePageState extends State<MinePage> {
             ),
             onTap: () {
               print('按下');
+              final Todo todo = Todo('我的页面', '品牌');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyBrandPage(),
+                  settings: RouteSettings(
+                    arguments: todo,
+                  ),
+                ),
+              );
             },
           ),
           Divider(
@@ -109,7 +132,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -123,6 +146,14 @@ class _MinePageState extends State<MinePage> {
             ),
             onTap: () {
               print('按下');
+//              Navigator.push(
+//                context,
+//                MaterialPageRoute(builder: (context) => FirstScreen()),
+//              );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => MyCoolCoinPage()),
+              );
             },
           ),
           Divider(
@@ -132,7 +163,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -155,7 +186,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -178,7 +209,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -201,7 +232,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -224,7 +255,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -247,7 +278,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -270,7 +301,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -293,7 +324,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -316,7 +347,7 @@ class _MinePageState extends State<MinePage> {
           GestureDetector(
             child: Container(
               color: Colors.white,
-              padding: EdgeInsets.fromLTRB( 16, 12, 8, 12),
+              padding: EdgeInsets.fromLTRB(16, 12, 8, 12),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -335,5 +366,13 @@ class _MinePageState extends State<MinePage> {
         ],
       ),
     );
+  }
+
+  void _navigateAndDisplaySelection(BuildContext context) async {
+    final result = await Navigator.push(
+        context, MaterialPageRoute(builder: (context) => ExperiencePage()));
+    Scaffold.of(context)
+      ..removeCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text('$result')));
   }
 }

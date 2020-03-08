@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_saas/view/splash_page.dart';
 
+import 'view/SecondScreen.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
@@ -16,7 +18,8 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
       title: 'SaaS App',
-      home: SplashPage(),
+      home:  SplashPage(),
+
     );
   }
 }
