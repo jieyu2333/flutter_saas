@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_saas/view/mine/my_coupons_page.dart';
 import 'package:flutter_saas/view/splash_page.dart';
 
 import 'view/SecondScreen.dart';
@@ -19,7 +20,9 @@ class _MyAppState extends State<MyApp> {
       ),
       title: 'SaaS App',
       home:  SplashPage(),
-
+      routes: {
+        MyCouponsPage.routeName: (context) => MyCouponsPage(),
+      },
     );
   }
 }

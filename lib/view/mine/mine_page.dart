@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_saas/model/ScreenArguments.dart';
 import 'package:flutter_saas/model/Todo.dart';
 import 'package:flutter_saas/view/FirstScreen.dart';
 import 'package:flutter_saas/view/mine/my_cool_coin_page.dart';
+import 'package:flutter_saas/view/mine/my_coupons_page.dart';
 import 'package:flutter_saas/view/mine/my_profile_page.dart';
 
 import 'experience_page.dart';
@@ -177,6 +179,12 @@ class _MinePageState extends State<MinePage> {
             ),
             onTap: () {
               print('按下');
+              Navigator.pushNamed(
+                context,
+                MyCouponsPage.routeName,
+                arguments: ScreenArguments('给特定的 route 传参',
+                    'This message is extracted in the build method.'),
+              );
             },
           ),
           Divider(
