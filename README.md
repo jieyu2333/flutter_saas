@@ -23,6 +23,26 @@ A new Flutter application.
             <h4 align='center'>群4</h4>
         </td>
     </tr>
+
+ 	<tr>
+        <td id='group_5'>
+            <img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx5.png?size=140'>
+            <h4 align='center'>群5</h4>
+        </td>
+        <td id='group_6'>
+            <img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx6.png?size=140'>
+            <h4 align='center'>群6</h4>
+        </td>
+        <td id='group_7'>
+            <img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx7.png?size=140">
+            <h4 align='center'>群7</h4>
+        </td>
+        <td id='group_8'>
+            <img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx8.png?size=140">
+            <h4 align='center'>群8</h4>
+        </td>
+    </tr>
+	   
 </table>
 
 
