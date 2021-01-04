@@ -2,6 +2,28 @@
 
 A new Flutter application.
 
+## 微信群
+
+<table id='wechat_group'>
+    <tr>
+        <td id='group_1'>
+            <img src='https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx.png?size=140'>
+            <h4 align='center'>群1已经满了</h4>
+        </td>
+        <td id='group_2'>
+            <img src='https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx2.png?size=140'>
+            <h4 align='center'>群2</h4>
+        </td>
+        <td id='group_3'>
+            <img src="https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx3.png?size=140">
+            <h4 align='center'>群3</h4>
+        </td>
+        <td id='group_4'>
+            <img src="https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx4.png?size=140">
+            <h4 align='center'>群4</h4>
+        </td>
+    </tr>
+</table>
 
 
 ```cmd
@@ -51,25 +73,4 @@ https://fir.im/tlnz
 			<h4 align='center'><a href='https://github.com/ChinaVolvocars/flutter_saas/blob/master/lib/view/forget_password_page.dart'>忘记密码</a></h4>
 		</td>
 	</tr>
-</table>
-## 微信群
-<table id='wechat_group'>
-    <tr>
-        <td id='group_1'>
-            <img src='https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx.png?size=140'>
-            <h4 align='center'>群1已经满了</h4>
-        </td>
-        <td id='group_2'>
-            <img src='https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx2.png?size=140'>
-            <h4 align='center'>群2</h4>
-        </td>
-        <td id='group_3'>
-            <img src="https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx3.png?size=140">
-            <h4 align='center'>群3</h4>
-        </td>
-        <td id='group_4'>
-            <img src="https://github.com/ChinaVolvocars/jd_maotai_seckill/blob/master/wx4.png?size=140">
-            <h4 align='center'>群4</h4>
-        </td>
-    </tr>
 </table>
