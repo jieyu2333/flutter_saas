@@ -50,6 +50,29 @@ A new Flutter application.
 </table>
 
 
+<table id='wechat_group3'>
+ 	<tr>
+        <td id='group_9'>
+            <img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx9.png?size=140'>
+            <h4 align='center'>群9</h4>
+        </td>
+        <td id='group_10'>
+            <img src='https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx10.png?size=140'>
+            <h4 align='center'>群10</h4>
+        </td>
+        <td id='group_7'>
+            <img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx11.png?size=140">
+            <h4 align='center'>群11</h4>
+        </td>
+        <td id='group_8'>
+            <img src="https://github.com/ChinaVolvocars/flutter_saas/blob/master/weichat/wx12.png?size=140">
+            <h4 align='center'>群12</h4>
+        </td>
+	</tr>
+	   
+</table>
+
+
 ```cmd
 flutter build apk
 ```
